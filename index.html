@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giáng Sinh Vui Vẻ</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            animation: fall 10s linear infinite;
+            font-size: 1.2em;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+        .snow-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff5757;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background-color: #41dfff;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="snow-container">
+        <!-- Tuyết -->
+        <span class="snowflake" style="left: 10%; animation-delay: 0s;">❄️</span>
+        <span class="snowflake" style="left: 30%; animation-delay: 2s;">❄️</span>
+        <span class="snowflake" style="left: 50%; animation-delay: 4s;">❄️</span>
+        <span class="snowflake" style="left: 70%; animation-delay: 6s;">❄️</span>
+        <span class="snowflake" style="left: 90%; animation-delay: 8s;">❄️</span>
+    </div>
+
+    <h1>Chúc Mừng Giáng Sinh!</h1>
+    <p>Chúc bạn một mùa Giáng Sinh an lành, ấm áp và tràn đầy niềm vui!</p>
+    <button onclick="alert('Merry Christmas! 🎅🎄')">Nhấn vào đây để nhận lời chúc!</button>
+    
+    <footer>© 2024 Đăng Khoa.</footer>
+</body>
+</html>
